@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3BE152A23A8768F00F8526A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE152923A8768F00F8526A /* DetailView.swift */; };
+		A3BE152C23A87B6800F8526A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE152B23A87B6800F8526A /* WebView.swift */; };
 		A3D336C323A2C15A000E74FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D336C223A2C15A000E74FF /* AppDelegate.swift */; };
 		A3D336C523A2C15A000E74FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D336C423A2C15A000E74FF /* SceneDelegate.swift */; };
 		A3D336C723A2C15A000E74FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D336C623A2C15A000E74FF /* ContentView.swift */; };
 		A3D336C923A2C15E000E74FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3D336C823A2C15E000E74FF /* Assets.xcassets */; };
 		A3D336CC23A2C15E000E74FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3D336CB23A2C15E000E74FF /* Preview Assets.xcassets */; };
 		A3D336CF23A2C15E000E74FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D336CD23A2C15E000E74FF /* LaunchScreen.storyboard */; };
+		A3D336D823A2C477000E74FF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D336D723A2C477000E74FF /* NetworkManager.swift */; };
+		A3D336DA23A2D08D000E74FF /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D336D923A2D08D000E74FF /* PostData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A3BE152923A8768F00F8526A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		A3BE152B23A87B6800F8526A /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		A3BE152D23A9302400F8526A /* Hacker News.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hacker News.entitlements"; sourceTree = "<group>"; };
 		A3D336BF23A2C159000E74FF /* Hacker News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hacker News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D336C223A2C15A000E74FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3D336C423A2C15A000E74FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,8 @@
 		A3D336CB23A2C15E000E74FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A3D336CE23A2C15E000E74FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3D336D023A2C15E000E74FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3D336D723A2C477000E74FF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A3D336D923A2D08D000E74FF /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +46,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3BE152623A8763C00F8526A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3D336C623A2C15A000E74FF /* ContentView.swift */,
+				A3BE152923A8768F00F8526A /* DetailView.swift */,
+				A3BE152B23A87B6800F8526A /* WebView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A3D336B623A2C159000E74FF = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +75,12 @@
 		A3D336C123A2C15A000E74FF /* Hacker News */ = {
 			isa = PBXGroup;
 			children = (
-				A3D336C223A2C15A000E74FF /* AppDelegate.swift */,
-				A3D336C423A2C15A000E74FF /* SceneDelegate.swift */,
-				A3D336C623A2C15A000E74FF /* ContentView.swift */,
+				A3BE152D23A9302400F8526A /* Hacker News.entitlements */,
+				A3D336D623A2C458000E74FF /* Models */,
+				A3BE152623A8763C00F8526A /* View */,
 				A3D336C823A2C15E000E74FF /* Assets.xcassets */,
+				A3D336C423A2C15A000E74FF /* SceneDelegate.swift */,
+				A3D336C223A2C15A000E74FF /* AppDelegate.swift */,
 				A3D336CD23A2C15E000E74FF /* LaunchScreen.storyboard */,
 				A3D336D023A2C15E000E74FF /* Info.plist */,
 				A3D336CA23A2C15E000E74FF /* Preview Content */,
@@ -73,6 +94,15 @@
 				A3D336CB23A2C15E000E74FF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A3D336D623A2C458000E74FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3D336D723A2C477000E74FF /* NetworkManager.swift */,
+				A3D336D923A2D08D000E74FF /* PostData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3D336DA23A2D08D000E74FF /* PostData.swift in Sources */,
+				A3BE152A23A8768F00F8526A /* DetailView.swift in Sources */,
+				A3D336D823A2C477000E74FF /* NetworkManager.swift in Sources */,
 				A3D336C323A2C15A000E74FF /* AppDelegate.swift in Sources */,
 				A3D336C523A2C15A000E74FF /* SceneDelegate.swift in Sources */,
 				A3D336C723A2C15A000E74FF /* ContentView.swift in Sources */,
+				A3BE152C23A87B6800F8526A /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +318,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Hacker News/Hacker News.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Hacker News/Preview Content\"";
 				DEVELOPMENT_TEAM = DQ9NH76TGJ;
 				ENABLE_PREVIEWS = YES;
@@ -295,6 +331,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Liu-Luke.Hacker-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,7 +341,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Hacker News/Hacker News.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Hacker News/Preview Content\"";
 				DEVELOPMENT_TEAM = DQ9NH76TGJ;
 				ENABLE_PREVIEWS = YES;
@@ -315,6 +354,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Liu-Luke.Hacker-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
