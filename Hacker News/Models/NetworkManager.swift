@@ -5,8 +5,8 @@
 //  Created by Hsueh Chih Liu on 2019/12/12.
 //  Copyright © 2019 Luke Liu. All rights reserved.
 //
-//git practice
-// now in branch
+
+
 import Foundation
 //observableobject means it can be boarcasted to the .... object?
 class NetworkManager : ObservableObject{
